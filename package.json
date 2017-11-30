@@ -1,0 +1,16 @@
+{
+  "name": "objmess",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/all.js"
+  },
+  "devDependencies": { "test": ">=0.0.5" },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
