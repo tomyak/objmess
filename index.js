@@ -13,9 +13,9 @@ var replaceAll=(str,mapObjs,ignoreCase)=>{
           matched=unwrap(matched)
           if (ignoreCase){
             var key = Object.keys(mapObj).filter((k)=>k.toLowerCase()===matched.toLowerCase())[0]
-            return mapObj[ key ];
+            return mapObj[ key ] || "";
           }
-          return mapObj[ignoreCase ? matched.toLowerCase() : matched ];
+          return mapObj[ignoreCase ? matched.toLowerCase() : matched ] || "";
       });
     })
     return rc
